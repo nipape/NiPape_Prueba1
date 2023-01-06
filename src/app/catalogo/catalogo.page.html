@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar color="dark" class="ion-padding">
+    <ion-title class="ion-text-center">PRUEBA UNO</ion-title>
+      <ion-buttons [routerLink]="['/home']" slot="start">
+      <ion-back-button default-href="#">Atras</ion-back-button>
+      </ion-buttons>
+
+
+  </ion-toolbar>
+</ion-header>
+<ion-content color="dark" class="ion-padding">
+<H1>Catálogo de productos</H1>
+<ion-item color="dark" class="ion-padding">
+  <ion-avatar slot="start">
+    <img alt="Real Madrid" src="https://sinergiastore.cl/wp-content/uploads/2022/07/PhotoRoom_001_20220701_234007.png" />
+  </ion-avatar>
+  <ion-label>
+    <h1>Camiseta del Real Madrid</h1>
+    <p>$80.000</p>
+  </ion-label>
+  <ion-icon [routerLink]="['/producto']" [queryParams]="
+  {
+    imagen: 'https://sinergiastore.cl/wp-content/uploads/2022/07/PhotoRoom_001_20220701_234007.png',
+    titulo: 'Camiseta del Real Madrid',
+    precio: '$80.000',
+    descripcion: 'Estadio Bernabeu de España'
+  }"
+    name="chevron-forward-outline"></ion-icon>
+
+</ion-item>
+<ion-item color="dark" class="ion-padding">
+  <ion-avatar slot="start">
+    <img alt="Arsenal" src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/450ddf1b5943474fa472ae25009dfed0_9366/Camiseta_Uniforme_Local_Arsenal_22-23_Rojo_HA5339_01_laydown.jpg" />
+  </ion-avatar>
+  <ion-label>
+    <h1>Camiseta del Arsenal</h1>
+    <p>$70.000</p>
+  </ion-label>
+  <ion-icon [routerLink]="['/producto']" [queryParams]="
+  {
+    imagen: 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/450ddf1b5943474fa472ae25009dfed0_9366/Camiseta_Uniforme_Local_Arsenal_22-23_Rojo_HA5339_01_laydown.jpg',
+    titulo: 'Camiseta del Arsenal',
+    precio: '$70.000',
+    descripcion: 'Emirates Stadium de Inglaterra'
+  }" name="chevron-forward-outline"></ion-icon>
+
+</ion-item>
+<ion-item color="dark" class="ion-padding">
+  <ion-avatar slot="start">
+    <img alt="PSG" src="https://alanguloo.cl/wp-content/uploads/2022/07/PSG-L-1200x1200.png" />
+  </ion-avatar>
+  <ion-label>
+    <h1>Camiseta del PSG</h1>
+    <p>$60.000</p>
+  </ion-label>
+  <ion-icon [routerLink]="['/producto']" [queryParams]="
+  {
+    imagen: 'https://alanguloo.cl/wp-content/uploads/2022/07/PSG-L-1200x1200.png',
+    titulo: 'Camiseta del PSG',
+    precio: '$60.000',
+    descripcion: 'Estadio Parque de los Principes en Francia'
+  }" name="chevron-forward-outline"></ion-icon>
+
+</ion-item>
+<ion-item color="dark" class="ion-padding">
+  <ion-avatar slot="start">
+    <img alt="Juventus" src="https://alanguloo.cl/wp-content/uploads/2021/10/PhotoRoom-20220730_205345_12.png" />
+  </ion-avatar>
+  <ion-label>
+    <h1>Camiseta de la Juventus</h1>
+    <p>$65.000</p>
+  </ion-label>
+  <ion-icon [routerLink]="['/producto']" [queryParams]="
+  {
+    imagen: 'https://alanguloo.cl/wp-content/uploads/2021/10/PhotoRoom-20220730_205345_12.png',
+    titulo: 'Camiseta del la Juventus',
+    precio: '$65.000',
+    descripcion: 'Estadio Juventus en Italia'
+  }" name="chevron-forward-outline"></ion-icon>
+
+</ion-item>
+<ion-item color="dark" class="ion-padding">
+  <ion-avatar slot="start">
+    <img alt="Barcelona" src="https://alanguloo.cl/wp-content/uploads/2022/07/BARCELONA.jpg" />
+  </ion-avatar>
+  <ion-label>
+    <h1>Camiseta del Barcelona</h1>
+    <p>$72.000</p>
+  </ion-label>
+  <ion-icon [routerLink]="['/producto']" [queryParams]="
+  {
+    imagen: 'https://alanguloo.cl/wp-content/uploads/2022/07/BARCELONA.jpg',
+    titulo: 'Camiseta del Barcelona',
+    precio: '$72.000',
+    descripcion: 'Camp Nou en España'
+  }" name="chevron-forward-outline"></ion-icon>
+
+</ion-item>
+
+</ion-content>
